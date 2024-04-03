@@ -1,0 +1,26 @@
+﻿<Window x:Class="CPerry_Ellipses.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CPerry_Ellipses"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Canvas x:Name="canvas" Background="#FFD1CECE" Focusable="True">
+
+        <Slider x:Name="xslider" Width="120" Canvas.Left="49" Canvas.Top="32" ValueChanged="Slider_ValueChanged" Maximum="750" Minimum="25" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="50" />
+
+        <Slider x:Name="yslider" Width="120" Canvas.Left="197" Canvas.Top="32" ValueChanged="Slider_ValueChanged" Maximum="750" Minimum="25" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="50" Value="25" />
+        
+        <Label Content="X" Canvas.Left="26" Canvas.Top="32"/>
+        <Label Content="Y" Canvas.Left="174" Canvas.Top="30"/>
+
+
+
+
+
+
+
+    </Canvas>
+</Window>
